@@ -1,32 +1,177 @@
-= タイトル
+= Pythonのこの機能がRubyにも欲しい！
 
-# : subtitle
-#    サブタイトル
-# : author
-#    作者
-# : institution
-#    所属
-# : content-source
-#    イベント名
-# : date
-#    2023-02-24
-# : allotted-time
-#    5m
-# : start-time
-#    2023-02-24T23:00:00+09:00
-# : end-time
-#    2023-02-24T23:05:00+09:00
-# : theme
-#    default
+: author
+   unasuke
+: content-source
+   Ruby30周年記念イベント
+: date
+   2023-02-25
+: theme
+   theme
 
-= 最初のスライド
+= 自己紹介
 
-  * 項目1
-  * 項目2
-  * 項目3
-
-= 二番目のスライド
+  * Name: うなすけ
+  * Work: フリーランス
+  * Ruby歴: 8年くらい
+  * Kaigi on Rails オーガナイザー
+  * (('tag:x-small')) GitHub ((<URL:https://github.com/unasuke>))
+  * (('tag:x-small')) Mastodon ((<URL:https://mstdn.unasuke.com/@unasuke>))
+  * (('tag:x-small')) Twitter ((<URL:https://twitter.com/yu_suke1994>))
 
   # image
-  # src = https://raw.github.com/rabbit-shocker/rabbit/master/sample/lavie.png
-  # relative_height = 100
+  # src = img/icon.jpg
+  # relative_width = 24
+  # align = right
+  # relative_margin_right = -8
+  # relative_margin_top = 20
+
+= (('tag:xx-large'))Pythonのこの機能がRubyにも欲しい！
+
+(('tag:center'))(('tag:xx-large'))とは？
+
+= 自分が今やっていること
+  # image
+  # src = img/ruby-or-jp-grant-2022.png
+  # relative_width = 90
+  # align = center
+
+(('tag:center'))(('tag:x-small'))((<URL:https://www.ruby.or.jp/ja/news/20220823>))
+
+= 自分が今やっていること
+  # image
+  # src = img/ruby-or-jp-grant-2022-unasuke.png
+  # relative_width = 90
+  # align = center
+
+(('tag:center'))(('tag:x-small'))((<URL:https://www.ruby.or.jp/ja/news/20221027>))
+
+= 自分が今やっていること
+  # image
+  # src = img/aioquic-og.png
+  # relative_width = 90
+  # align = center
+
+(('tag:center'))(('tag:x-small'))((<URL:https://github.com/aiortc/aioquic>))
+
+= 自分が今やっていること
+  # image
+  # src = img/aioquic-loc.png
+  # relative_width = 90
+  # align = center
+
+= まえおき
+
+* Pythonはもっぱら読むがわ
+* プロトコルの実装という分野においての意見
+* Rubyにこの機能の輸入をしてほしいか、と言われると……
+
+= Rubyにこの機能を入れてほしい (ではない！)
+
+* 既存資産との兼ね合いとか
+* 文法的に厳しいとか
+* 「みんなちがって、みんないい。」的な気持ちで
+
+= その1 Enum
+  
+  # image
+  # src = img/python-enum.png
+  # relative_width = 80
+  # align = center
+
+= EnumはRubyでも実現できるのでは？
+
+  # image
+  # src = img/ruby-enum.png
+  # relative_width = 70
+  # align = center
+
+(('tag:center'))(('tag:xx-large'))ちゃうねん
+
+= EnumはRubyでも実現できるのでは？
+  
+  # image
+  # src = img/python-enum-print.png
+  # relative_width = 75
+  # align = center
+
+(('tag:center'))Pythonだとこう
+
+= EnumはRubyでも実現できるのでは？
+  # image
+  # src = img/ruby-enum-print.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))Rubyだとこう
+
+= その2 bytes
+
+  # image
+  # src = img/python-bytes.png
+  # relative_width = 80
+  # align = center
+
+= その2 bytes (Rubyの場合)
+  
+  # image
+  # src = img/ruby-encoding.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))RubyだとStringになり、Encodingを持つ
+
+= その2 bytes (RubyのIO::Bufferの場合)
+  
+  # image
+  # src = img/ruby-io-buffer.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))IO::Bufferならバイト列になる
+
+= その3 tuple
+  
+  # image
+  # src = img/python-tuple.png
+  # relative_width = 80
+  # align = center
+
+= その3 tuple (Rubyの場合)
+  
+  # image
+  # src = img/ruby-array-as-tuple.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))配列にならざるをえない
+
+= その4 @dataclass (というよりはdecorator)
+  
+  # image
+  # src = img/python-dataclass.png
+  # relative_width = 80
+  # align = center
+
+= その4 @dataclass (Rubyの場合)
+  
+  # image
+  # src = img/ruby-struct-data.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))StructとかDataになる
+
+= その4 @dataclass (というよりはdecorator)
+  
+  # image
+  # src = img/python-decorator.png
+  # relative_width = 80
+  # align = center
+
+(('tag:center'))Classや関数をwrapできる
+
+= 逆にRubyのこの機能はうれしい
+* 後置if/unless
+* de facto standardなパッケージマネージャ(gem/bundler)
+* debug.gem (色)
