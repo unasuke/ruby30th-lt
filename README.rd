@@ -1,6 +1,7 @@
-= TODO: スライドのタイトル
+= ruby30th-lt
 
-TODO: スライドの説明
+* https://30.ruby.or.jp
+* https://www.youtube.com/watch?v=cmd5NdMjHkI
 
 == 作者向け
 
@@ -16,9 +17,9 @@ TODO: スライドの説明
 
 === インストール
 
-  gem install rabbit-slide--ruby30th-lt
+  gem install rabbit-slide-unasuke-ruby30th-lt
 
 === 表示
 
-  rabbit rabbit-slide--ruby30th-lt.gem
+  rabbit rabbit-slide-unasuke-ruby30th-lt.gem
 
